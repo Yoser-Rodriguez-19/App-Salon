@@ -1,0 +1,34 @@
+.formulario {
+    width: 100%;
+}
+
+.campo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    label {
+        flex: 0 0 10rem; // esto es que no va a tener factor de crecimiento tampoco de decremento, pero su tamaño va  aser de 10rem
+        color: $blanco;
+        
+    }
+    //el factor de crecimiento quiere decir la cantidad de pixeles que se les va a agregar a cada elemento
+
+    input{ // como cada input tiene diferentes atributos, se puede seleccionar por atributos en caso que asi lo quieras con [type="..."]
+        flex: 1; // que tome un facto de crecimiento en 1, // esto quiere decir que por cada pixel agregado a cada campo
+        padding: $separacion / 4;
+        border-radius: 1rem;
+        border: none;
+    }
+}
+
+.alerta {
+    padding: $separacion / 2;
+    text-align: center;
+    color: $blanco;
+    width: 100%;
+    display: block;
+
+    &.error {
+        background-color: rgb(194, 0, 0);
+    }
+}

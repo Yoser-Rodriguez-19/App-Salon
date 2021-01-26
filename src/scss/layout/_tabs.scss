@@ -1,0 +1,29 @@
+.tabs {
+
+    @include tablet {
+        @include grid (3, 2rem);
+
+    }
+    button {
+        margin: 0 auto 2rem auto;
+        width: 95%;
+        display: block;
+        background-color: $blanco;
+        font-size: 2rem;
+        font-weight: $bold;
+        padding: 1.5em;
+        text-align: center;
+        text-transform: uppercase;
+        border: none;
+        outline: none; //quitar el borde a el boton cuando se selecciona
+        
+        &.actual {
+            background-color: $azul;
+            color: $blanco;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

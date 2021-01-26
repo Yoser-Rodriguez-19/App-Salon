@@ -1,0 +1,43 @@
+.invalidar-cita {
+    text-align: center;
+    margin: $separacion / 2 0;
+    text-transform: uppercase;
+}
+
+.contenido-resumen { // seleccionamos la clase de la pagina de el resumen
+
+    margin-bottom: $separacion / 2 0;
+
+    p {
+        margin-bottom: .5rem;
+        span{
+            font-weight: $bold;
+            color: $azul;
+            font-size: 2.4rem;
+        }
+    }
+    .resumen-servicios { // definido con JS
+
+        h3 {
+            margin: $separacion / 2 0;
+        }
+
+        .contenedor-servicio { // definido con JS
+
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #43453c; //el segundo valor es la intensidad
+
+
+            .precio { // definido tambien con JS
+                font-size: 2.4rem;
+                font-weight: $bold;
+                color: $azul;
+            }
+        }
+    }   
+}
+
+.total { // esta definida en JS
+    text-align: right;  // se ira al lado derecho
+}
